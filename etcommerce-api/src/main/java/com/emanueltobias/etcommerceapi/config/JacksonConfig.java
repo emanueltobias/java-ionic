@@ -1,4 +1,4 @@
-package com.emanueltobias.etcommerceapi;
+package com.emanueltobias.etcommerceapi.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
