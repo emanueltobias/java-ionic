@@ -6,7 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @Component({
   templateUrl: 'app.html'
 })
-export class MyApp {
+export class Etcommerce {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: string = 'HomePage';
