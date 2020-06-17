@@ -18,7 +18,8 @@ export class Etcommerce {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: 'HomePage' }
+      { title: 'Perfil', component: 'ProfilePage' },
+      { title: 'Categorias', component: 'CategoriasPage' }
     ];
 
   }
