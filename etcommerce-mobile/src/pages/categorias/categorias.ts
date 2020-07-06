@@ -13,7 +13,7 @@ export class CategoriasPage {
 
   bucketUrl: string = API_CONFIG.bucketBaseUrl;
 
-  items: CategoriaDTO[];
+  itens: CategoriaDTO[];
 
   constructor(
     public navCtrl: NavController,
@@ -24,8 +24,12 @@ export class CategoriasPage {
   ionViewDidLoad() {
     this.categoriaService.findAll()
       .subscribe(response => {
-        this.items = response;
+        this.itens = response;
       },
       error => {});
+  }
+
+  showProdutos() {
+    this.navCtrl.push('ProdutosPage');
   }
 }
