@@ -26,6 +26,7 @@ export class Etcommerce {
     this.pages = [
       { title: 'Perfil', component: 'ProfilePage' },
       { title: 'Categorias', component: 'CategoriasPage' },
+      { title: 'Carrinho de Compras', component: 'CartPage'},
       { title: 'Logout', component: ''}
     ];
 
