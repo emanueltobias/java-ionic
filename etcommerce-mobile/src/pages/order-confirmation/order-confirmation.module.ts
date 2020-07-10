@@ -4,6 +4,9 @@ import { OrderConfirmationPage } from './order-confirmation';
 import {LOCALE_ID} from '@angular/core';
 import localePt from '@angular/common/locales/pt';
 import {registerLocaleData} from '@angular/common';
+import { PedidoService } from './../../services/domain/pedido.service';
+
+
 
 registerLocaleData(localePt, 'pt');
 
@@ -15,6 +18,7 @@ registerLocaleData(localePt, 'pt');
     IonicPageModule.forChild(OrderConfirmationPage),
   ],
   providers: [
+    PedidoService,
     {
         provide: LOCALE_ID,
         useValue: 'pt'
