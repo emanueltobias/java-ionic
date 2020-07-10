@@ -13,8 +13,8 @@ export class ClienteService {
     public storage: StorageService) {
     }
 
-    findByEmail(email: string) : Observable<ClienteDTO> {
-      return this.http.get<ClienteDTO>(`${API_CONFIG.baseUrl}/clientes/email?value=${email}`);
+    findByEmail(email: string)  {
+      return this.http.get(`${API_CONFIG.baseUrl}/clientes/email?value=${email}`);
   }
 
     getImageFromBucket(id : string) : Observable<any> {
@@ -23,9 +23,7 @@ export class ClienteService {
   }
 
   insert(obj : ClienteDTO) {
-    return this.http.post(
-        `${API_CONFIG.baseUrl}/clientes`,
-        obj,
+    return this.http.post(`${API_CONFIG.baseUrl}/clientes`,obj,
         {
             observe: 'response',
             responseType: 'text'
